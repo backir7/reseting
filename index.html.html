@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.btn{
+    padding: 80px;
+    font-size: xx-large;
+    color: rgb(4, 4, 4);
+    background-color: rgba(0, 0, 0, 0.256);
+    border-radius: 8px;
+    border: none;
+    margin-top: 100px;
+    /* gap: 100px; */
+}
+.btn:hover{
+    color: aliceblue;
+    background-color: rgba(13, 13, 13, 0.349);
+}
+.bt1{
+    padding:20px ;
+    width: 120px;
+    border: none;
+    border-radius: 8px;
+    color: aliceblue;
+    background-color: rgb(154, 4, 4);
+    margin-top:50px;
+}
+.bt1:hover{
+    color: aliceblue;
+    background-color: blueviolet;
+}
+.div{
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <div class="div">
+    <button type="submit" onclick="incriment1()" class="btn" id="one">0</button>
+    <button type="submit" onclick="incriment2()" class="btn" id="two">0</button>
+    <button type="submit" onclick="incriment3()" class="btn" id="three">0</button>
+    <div>
+    <button type="submit" onclick="resetting()" class="bt1" id="reset">Reset</button>
+   </div>
+   </div>
+
+</body>
+<script>
+let count=0;
+
+function incriment1(){
+    count++;
+   one.textContent = count; 
+}
+let count1=0;
+
+function incriment2(){
+    count1++;
+   two.textContent = count1; 
+}
+let count3=0;
+
+function incriment3(){
+    count3++;
+   three.textContent = count3; 
+}
+
+function resetting(){
+     one.textContent = count=0; 
+     two.textContent = count=0; 
+     three.textContent = count=0; 
+}
+
+
+
+
+
+</script>
+
+</html>
